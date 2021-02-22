@@ -2,12 +2,13 @@ import "./style";
 
 const url = new URL(location.href);
 
-const authToken = url.searchParams.get('auth_token');
-const authUser = url.searchParams.get('auth_user');
+const authToken = url.searchParams.get('auth_token') || atob('YjViZjAyOTdkNjIxM2E5NGEzZWY1YTZlNGIxODIzNjk5MTM0OGMxYg==');
+const authUser = url.searchParams.get('auth_user') || 'iwnow';
 
-const mdUser = url.searchParams.get('user');
-const mdRepo = url.searchParams.get('repo');
-const mdFile = url.searchParams.get('file');
+const mdUser = url.searchParams.get('user') || 'repapved';
+const mdRepo = url.searchParams.get('repo') || 'test-article';
+const mdFile = url.searchParams.get('file') || 'test.md';
+const mdBranch = url.searchParams.get('branch') || 'main';
 
 
 async function rawLoader(path: string) {
@@ -38,7 +39,7 @@ async function markdownToHtml(text: string) {
 
 async function run() {
   const testMd = await rawLoader(
-    `https://raw.githubusercontent.com/${mdUser}/${mdRepo}/main/${mdFile}`
+    `https://raw.githubusercontent.com/${mdUser}/${mdRepo}/${mdBranch}/${mdFile}`
   );
   const htmlMd = await markdownToHtml(testMd);
 
