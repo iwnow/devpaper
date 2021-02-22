@@ -21,6 +21,7 @@
     "vite": "^2.0.1"
   },
   "dependencies": {
+    "@primer/css": "^15.2.0",
     "github-markdown-css": "^4.0.0",
     "normalize.css": "^8.0.1"
   }
