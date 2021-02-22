@@ -1,0 +1,27 @@
+{
+  "name": "devpaper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./dev-server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/repapved/devpaper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/repapved/devpaper/issues"
+  },
+  "homepage": "https://github.com/repapved/devpaper#readme",
+  "devDependencies": {
+    "vite": "^2.0.1"
+  },
+  "dependencies": {
+    "github-markdown-css": "^4.0.0",
+    "normalize.css": "^8.0.1"
+  }
+}
