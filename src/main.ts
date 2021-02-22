@@ -6,7 +6,7 @@ async function rawLoader(path: string) {
 
 async function ghApi(resource: string, httpMethod: 'POST' | 'GET' = 'GET', body?: any) {
   const user = "iwnow";
-  const token = "ff817d361da828c381330214c1e82030e1d89fcd";
+  const token = "bd085c23abe7c6d84f9d651c25abaa06b22d9057";
   const endpoint = "https://api.github.com";
   const creds = `${user}:${token}`;
   const auth = btoa(creds);
@@ -22,7 +22,10 @@ async function ghApi(resource: string, httpMethod: 'POST' | 'GET' = 'GET', body?
 }
 
 async function markdownToHtml(text: string) {
-  return ghApi('/markdown', 'POST', { text }).then(r => r.text());
+  return ghApi('/markdown', 'POST', { text }).then(r => r.text()).then(text => {
+      const replaced = text.replaceAll('id="user-content-', 'id="');
+      return replaced;
+  });
 }
 
 async function run() {
