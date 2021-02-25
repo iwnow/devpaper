@@ -1,7 +1,9 @@
+[Settings]
+  ID = "30fc7629-818d-4127-9bd0-d79544654a4d"
 
 [build]
   command = "npm run build"
-  functions = "netlify/functions"
+  functions = "functions"
   publish = "."
 
   ## Uncomment to use this redirect for Single Page Applications like create-react-app.
