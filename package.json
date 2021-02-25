@@ -1,0 +1,25 @@
+{
+  "name": "devpaper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "netlify dev",
+    "build": "netlify build",
+    "netlify": "netlify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/repapved/devpaper.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/repapved/devpaper/issues"
+  },
+  "homepage": "https://github.com/repapved/devpaper#readme",
+  "devDependencies": {
+    "netlify-cli": "^3.8.6"
+  }
+}
