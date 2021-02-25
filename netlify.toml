@@ -1,8 +1,5 @@
-[Settings]
-  ID = "30fc7629-818d-4127-9bd0-d79544654a4d"
-
 [build]
-  command = "npm run build"
+  command = "echo building..."
   functions = "functions"
   publish = "."
 
