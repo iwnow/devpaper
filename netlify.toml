@@ -1,7 +1,6 @@
 [build]
-  command = "echo building..."
-  functions = "functions"
-  publish = "."
+  command = "npm run build-lambda"
+  functions = "dist/server/lambda"
 
   ## Uncomment to use this redirect for Single Page Applications like create-react-app.
   ## Not needed for static site generators.
