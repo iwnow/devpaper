@@ -3,13 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "start": "netlify dev",
     "build": "next build",
-    "start": "next start"
+    "netlify": "netlify"
   },
   "dependencies": {
     "next": "10.0.7",
     "react": "17.0.1",
     "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "@netlify/plugin-nextjs": "^2.0.1",
+    "netlify-cli": "^3.10.1"
   }
 }
