@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "netlify dev",
-    "build": "next build",
+    "next": "next",
     "netlify": "netlify"
   },
   "dependencies": {
